@@ -1,0 +1,236 @@
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+
+color: rgb(158, 255, 207);
+padding: 1rem;
+text-align: center;
+}
+nav a {
+list-style: none;
+padding: 0;
+}
+nav a {
+display: inline;
+margin: 10px;
+}
+
+nav a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+nav a:hover {
+color: #00eeff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px #ff0000(255, 0, 0);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #555555;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.card::after {
+  content: "Agregar al carrito ";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #4169E1;
+  color: #ffffff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #FFD700;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #FFD700;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+img {
+  background: rgb(36, 0, 102);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px #b4b4b4(255, 3, 3);
+}
+
+.card .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+<style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #111;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p.intro {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        /* Contenedor tarjetas */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        /* Tarjeta */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .card:hover {
+            background-color: #e0e6f8;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+        }
+
+        /* Icono en círculo */
+        .icon-wrapper {
+            background-color: #d9e2f3;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #0073bb;
+        }
+
+        /* Título */
+        .card-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #0073bb;
+        }
+
+        /* Texto secundario */
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.3;
+            flex-grow: 1;
+        }
+
+        /* Íconos estilo simple con emojis para simplificar */
+    
+        <style
+
+
+
+
+
+
+

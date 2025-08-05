@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .formulario-registro {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario-registro h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      width: 35%;
+      padding-right: 10px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group input {
+      width: 65%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulario-registro button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000764;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .formulario-registro button:hover {
+      background-color: #000764;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="formulario-registro" action="registro.php" method="POST">
+    <h2>Formulario de Registro</h2>
+
+    <div class="form-group">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10,15}" placeholder="Ej: 5512345678" required>
+    </div>
+
+    <div class="form-group">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+
+    <div class="form-group">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+    </div>
+
+    <div class="form-group">
+      <label for="pais">País:</label>
+      <input type="text" id="pais" name="pais" required>
+    </div>
+
+    <div class="form-group">
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+      <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+    </div>
+
+    <button type="submit">Registrarse</button>
+
+  </form>
+
+</body>
+<style>
+body
+    { 
+        background-image: url("C:/Users/ESTUDIANTE/Pictures/joyeria isabella/assets/img/fondo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+</html>
